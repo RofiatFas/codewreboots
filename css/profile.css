@@ -1,0 +1,46 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html,body {
+    margin:0;
+    padding:0;
+}
+
+.personal{
+    width: 97%;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 23cm;
+}
+
+h5{
+    padding-left: 15px;
+}
+
+.save-btn{
+    margin-top: 10px;
+    padding-left: 20px !important;
+}
+
+.save-btn button[type="submit"] {
+    background: #03a9f5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 1.1em;
+    max-width: 80px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .save-btn button[type="submit"]:hover{
+    background: white;
+    color: #03a9f5;
+    border: 1px solid#03a9f5;
+  }

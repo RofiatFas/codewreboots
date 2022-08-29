@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/request.css">
+    <link rel="stylesheet" href="css/issue.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/purchase.css">
+    <link rel="stylesheet" href="css/purchaseordercon.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Vendor Portal</title>
+  </head>
+  <body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+    <div class="container-fluid">
+        <i class="fa fa-fw fa-home icon-home"></i>
+      <a class="navbar-brand logo" href="#">VENDOR PORTAL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end last-nav" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown bg-dark">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-plus-circle icon"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 5%;">
+              <li><a class="dropdown-item" data-bs-toggle="modal" href="#modal1">Waybill</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Invoice</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Payment Reciept</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Certificate of<br> Completion</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="profile.html">Add new user</a></li>
+            </ul>
+          </li>
+
+        
+          <li class="nav-item">
+            <a class="nav-link" href="notification.html"><i class="fa fa-bell icon"></i></a>
+          </li>
+          <li class="nav-item dropdown bg-dark">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-user icon user-ic"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="width: 10%;">
+              <li><a class="dropdown-item" href="#">Company Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">User Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Change Password</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Second Nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark text-white" style="background-color: #09a8c5;">
+    <div class="container-fluid second-nav">
+      <div class="collapse navbar-collapse second-nav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 second-list">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">DASHBOARD</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="request.html">REQUEST FOR QOUTES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="purchase.html">PURCHASE ORDER</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="issue.html">ISSUE RESOLUTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">REPORT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">PROFILE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Activity -->
+
+  <div class="dashboard-container">
+    <p id="activity-text">Activity Cues</p>
+    <div class="numbers">
+      <div class="num-1">
+        <p class="data-1"><i class="fa-solid fa-file-pen"></i><span class="span-1">54</span></p>
+        <p class="data-text-1">Quotes</p>
+      </div>
+      <div class="num-2">
+        <p class="data-1"><i class="fa-solid fa-triangle-exclamation"></i><span class="span-1">54</span></p>
+        <p class="data-text-1"> Pending Quotes</p>
+      </div>
+      <div class="num-3">
+        <p class="data-1"><img src="img/tickicon.png" alt="" srcset=""><span class="span-1">54</span></p>
+        <p class="data-text-1">Approved Quotes</p>
+      </div>
+      <div class="num-4">
+        <p class="data-1"><i class="fa-solid fa-circle-xmark"></i><span class="span-1">54</span></p>
+        <p class="data-text-1">Rejected Quotes</p>
+      </div>
+      <div class="num-5">
+        <p class="data-1"><i class="fa-solid fa-folder"></i><span class="span-1">54</span></p>
+        <p class="data-text-1">Purchase Orders</p>
+      </div>
+      <div class="num-6">
+        <p class="data-1"><i class="fa-solid fa-folder-open"></i><span class="span-1">54</span></p>
+        <p class="data-text-1">Opened Purchase Orders</p>
+      </div>
+      <div class="num-7">
+        <p class="data-1"><i class="fa-solid fa-circle-xmark"></i><span class="span-1">54</span></p>
+        <p class="data-text-1">Accepted Purchase Orders</p>
+      </div>
+      <div class="num-8">
+        <p class="data-1"><i class="fa-solid fa-circle-xmark"></i><span class="span-1">54</span></p>
+        <p class="data-text-1">Closed Purchase Orders</p>
+      </div>
+    </div>
+  </div>
+
+ 
+     
+    <!-- Notification -->
+
+    <div class="notification">
+        <div class="message-icon">
+        <i class="fa-solid fa-message"></i>
+        </div>
+        <diV class="notification-text">
+          <div class="now-text">
+          <p>Vendor portal <span class="dot-notification">.</span> now</p>
+          </div>
+          <h4 class="new-notification">New Notification</h4>
+          <p class="lorem-text">Do ullamco ex velit anim do proident exercitation et anim tempor. Lorem sunt deserunt labore non excepteur veniam enim quis officia magna anim... Do ullamco ex velit anim do proident exercitation et anim tempor. Lorem sunt deserunt labore non excepteur veniam enim quis officia magna anim... </p>
+        </diV>
+    </div>
+
+
+    <!-- Supplier -->
+
+    <p id="activity-text">Supplier Compliance Stats</p>
+    <div class="all">
+      <div class="circle-wrap">
+        <div class="circle">
+          <div class="mask full-1">
+            <div class="fill-1"></div>
+          </div>
+          <div class="mask half">
+            <div class="fill-1"></div>
+          </div>
+          <div class="inside-circle"> 90% </div>
+        </div>
+      </div>
+
+        <div class="circle-wrap">
+          <div class="circle">
+            <div class="mask full-2">
+              <div class="fill-2"></div>
+            </div>
+            <div class="mask half">
+              <div class="fill-2"></div>
+            </div>
+            <div class="inside-circle"> 270% </div>
+          </div>
+        </div>
+
+        <div class="circle-wrap">
+          <div class="circle">
+            <div class="mask full-3">
+              <div class="fill-3"></div>
+            </div>
+            <div class="mask half">
+              <div class="fill-3"></div>
+            </div>
+            <div class="inside-circle"> 180% </div>
+          </div>
+        </div>
+
+        <div class="circle-wrap">
+          <div class="circle">
+            <div class="mask full-4">
+              <div class="fill-4"></div>
+            </div>
+            <div class="mask half">
+              <div class="fill-4"></div>
+            </div>
+            <div class="inside-circle"> 225% </div>
+          </div>
+        </div>
+          <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full-5">
+                <div class="fill-5"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill-5"></div>
+              </div>
+              <div class="inside-circle"> 135% </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+
+  <!-- Recent Activity -->
+
+  
+  <div id="parent">
+    <div class="child-1">Recent Activities</div>
+    <div class="child-2">Fill Rate Chart</div>
+</div>
+
+<table>
+  <tr>
+    <th>Activities</th>
+    <th>Purchase Code</th>
+    <th>Status</th>
+    <th>Dates</th>
+    <th>Bidding</th>
+  </tr>
+  <tr>
+    <td class="supplies">Supplies of Stationaries<span class="jane"><br>JaneDoe</span></td>
+    <td class="text-gray">Ed12456</td>
+    <td class="text-gray">Pending</td>
+    <td class="text-gray">04/02/2022</td>
+    <td class="text-gray">$2,500</td>
+  </tr>
+  <tr>
+    <td class="supplies">Supplies of Printers<span class="jane"><br>JaneDoe</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td class="supplies">Supplies of Laptops<span class="jane"><br>JaneDoe</span></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+ 
+</table>
+
+<!-- Charts -->
+  <div id="my-pie-chart"></div>
+
+  <div class="charts-dot">
+    <span class="dot1"></span>
+    <p>Color1</p>
+    <span class="dot2"></span>
+    <p>Color2</p>
+    <span class="dot3"></span>
+    <p>Color3</p>
+    <span class="dot4"></span>
+  </div>
+
+  <div class="container-fluid">
+    <div class="modal fade" id="modal1" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+          <div class="modal-header pl-5" style='border: none;'>
+            <h5 class="modal-title fw-600" id="modal1" style="font-size: 18px;">Select Purchase Order</h5>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="modal-body pl-5">
+            <div class="dropdown">
+              <select class="form-select modal-drop" aria-label="Default select example">
+                <option value="" selected disabled hidden style="font-size: 12px;">Purchase Order Code</option>
+                <option value="1">Accepted</option>
+                <hr class="dropdown-divider bg-dark">
+                <option value="2">Rejected</option>
+                <hr class="dropdown-divider" style="background-color: black;">
+                <option value="3">Submitted</option>
+                <hr class="dropdown-divider bg-dark">
+                <option value="4">Pending</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center" style='border: none;'>
+            <a href="purchaseordercon.html" type="button" class="btn btn-secondary continue-btn pl-5" style="background-color: #03a9f5;" > Continue</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
